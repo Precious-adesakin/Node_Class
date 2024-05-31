@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the dashboard!</h1>
+
+
+    <% students.map((students)=>{%>
+        <h1><%= students.lastname %></h1>   
+        <h1><%= students.firstname %></h1>  
+        <form action="/deletestudent" method="POST">
+            <input type="text" value="<% students._id %>" name="id">
+            <button>DELETE</button>
+        </form>
+        <button>EDIT</button>
+    <% }) %>
+</body>
+</html>
