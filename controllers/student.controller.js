@@ -1,4 +1,4 @@
-let studentModel = require(".../models/student.model.js")
+let studentModel = require("../models/student.model.js")
 
 const displayIndex = (req,res)=>{
     res.render("index")
@@ -41,4 +41,15 @@ const deleteStudent = (req,res)=>{
     })
 }
 
-module.exports = {displayIndex, displaySignup, getAbout, getDashboard, registerStudent, deleteStudent}
+const sendMail =(req,res)=>{
+    console.log("It is working");
+    let transporter = nodemailer.createTransport({
+        service : 'gmail'
+        auth : {
+            user : olabodeprecious2023@gmail.com,
+            pass : ''
+        }
+    })
+}
+
+module.exports = {displayIndex, displaySignup, getAbout, getDashboard, registerStudent, deleteStudent, sendMail}

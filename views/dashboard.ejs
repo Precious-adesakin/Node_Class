@@ -10,9 +10,9 @@
 
 
     <% students.map((students)=>{%>
-        <h1><%= students.lastname %></h1>   
         <h1><%= students.firstname %></h1>  
-        <form action="/deletestudent" method="POST">
+        <h1><%= students.lastname %></h1>   
+        <form action="/deleteStudent" method="POST">
             <input type="text" value="<% students._id %>" name="id">
             <button>DELETE</button>
         </form>
