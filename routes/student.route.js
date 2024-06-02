@@ -5,7 +5,7 @@ router.get("/", displayIndex)
 router.get("/signup", displaySignup)
 router.get("/about", getAbout)
 router.get("/dashboard", getDashboard)
-router.get("/sendMail", sendMail)
+// router.get("/sendMail", sendMail)
 router.get("/register", registerStudent)
 router.get("/deleteStudent", deleteStudent)
 

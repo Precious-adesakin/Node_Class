@@ -1,6 +1,6 @@
 console.log("Welcome to node");
 const express= require("express")
-const nodemailer = require("nodemailer")
+// const nodemailer = require("nodemailer")
 let studentRouter = require("./routes/student.route.js")
 const mongoose = require("mongoose");
 const ejs = require("ejs")
